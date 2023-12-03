@@ -6,6 +6,7 @@
  * Type
  *
  * 타입은 쉽게 말해서 TS의 타입에 이름을 지어주는 역할을 한다.
+ * type키워드를 통해 원하는 타입을 지정해줄 수 있다.
  */
 type NewStringType = string;
 
