@@ -5,7 +5,7 @@ let helloText: string = "Hello";
 // helloText = true;
 
 /**
- * JS에 존재하는 타입
+ * JS의 primitive(원시) 타입
  * 7개의 타입
  */
 const stringVar: string = "String";
@@ -16,6 +16,14 @@ const symbolVar: symbol = Symbol(1);
 const nullVar: null = null;
 const undefinedVar: undefined = undefined;
 
+let stringvalue: string = "hello";
+let numberValue: number = 5;
+let bigIntValue: bigint = BigInt(98098098);
+let booleanValue: boolean = true;
+let symboleValue: symbol = Symbol(5);
+let nullValue: null = null;
+let undefinedValue: undefined = undefined;
+
 /**
  * TS에만 존재하는 타입
  */
@@ -25,6 +33,7 @@ anyVar = 100;
 anyVar = "코드팩토리";
 anyVar = true;
 
+//any 타입은 모든 타입의 변수 값에 할당될 수 있다.
 let testNumber: number = anyVar;
 let testString: string = anyVar;
 let testBolean: boolean = anyVar;
@@ -35,6 +44,8 @@ unknownType = 100;
 unknownType = "코드팩토리";
 unknownType = true;
 
+// any 타입과 다르게 unknown타입은 unknown, any타입 외의 변수에 할당할 수 없다.
+
 // let testNumber2: number = unknownType;
 // let testString2: string = unknownType;
 // let testBolean2: boolean = unknownType;
@@ -42,7 +53,7 @@ let unkonwType2: unknown = unknownType;
 let anyType2: any = unknownType;
 
 // never - 어떠한 값도 저장되거나 반환되지 않을때 사용하는 타입
-// let neverType: never = null;
+let neverType: never;
 // let neverType: never = undefined;
 // let neverType: never = 'test';
 
@@ -51,3 +62,4 @@ let anyType2: any = unknownType;
  */
 const koreanGirlGroup: string[] = ["아이브", "레드벨벳", "블랙핑크"];
 const booleanList: boolean[] = [true, false, false, true];
+let stringArray: string[] = ["hi", "2", "3"];

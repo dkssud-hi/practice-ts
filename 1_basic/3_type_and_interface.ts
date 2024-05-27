@@ -14,22 +14,25 @@ type NewNullType = null;
 
 type NewNumberType = number;
 
+//특정 값 자체를 타입으로 지정해줄 수 도 있다.
 type MaleOrFemale = "male" | "female";
 
 const stringVar: NewStringType = "test";
 
 type IdolType = {
   name: string;
-  year?: number;
+  year?: number; // ? 키워드를 통해 객체 프로퍼티의 값을 옵셔널하게 바꿔줄 수 도 있다.
 };
 
 const yuJin: IdolType = {
   name: "안유진",
-  // year: 2002,
+  year: 2002,
 };
 
 /**
  * Interface
+ * Interface 키워드는 type키워드의 단점을 보완하기 위해 나왔다.
+ * 기본적으로 원시타입을 제외한 객체,함수 타입만 지정할 수 있다.
  */
 interface IdolInterface {
   name: string;
