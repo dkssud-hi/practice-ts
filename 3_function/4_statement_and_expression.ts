@@ -2,7 +2,7 @@
  * Statement and Expression
  */
 
-// statement (문장)
+// statement (선언식)
 function addTwoNumbers(x: number, y: number) {
   return x + y;
 }

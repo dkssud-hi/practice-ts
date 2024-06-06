@@ -33,6 +33,10 @@ type UnionType = string | number;
 
 // (3) primitive list 또는 tuple 타입 선언하기
 type TupleType = [number, string];
+type stringList = string[];
+
+const names: stringList = ["sang-Il", "Deum-Eun", "Young-Woong"];
+const numberOrString: TupleType = [1, "sangil"];
 
 /**
  * Interface는 할 수 있고

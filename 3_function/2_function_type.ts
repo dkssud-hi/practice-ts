@@ -26,3 +26,13 @@ const multiplyTwoNumbers3: IMultiplyTwoNumbers = (x, y) => {
   // return true;
   return x * y;
 };
+
+type calculate = (x: number, y: number) => number;
+
+const add: calculate = function (num1, num2) {
+  return num1 + num2;
+};
+
+interface Icalculate {
+  (num1: number, num2: number): number;
+}

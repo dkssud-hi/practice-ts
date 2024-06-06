@@ -7,6 +7,7 @@
  * 2) 세개를 받는 함수
  */
 
+//선언부 : 함수가 쓰이는 경우에 대해 기술한다,
 function stringOrStrings(members: string): string;
 function stringOrStrings(
   member1: string,
@@ -24,6 +25,8 @@ function stringOrStrings(
  * 각각 아이돌을 각각의 파라미터의 값으로 입력한다.
  * 예) '안유진', '장원영', '레이'
  */
+
+//구현부 : 선언부의 각 경우를 포괄할 수 있도록 기능을 구현한다.
 function stringOrStrings(
   memberOrMembers: string,
   member2?: string,

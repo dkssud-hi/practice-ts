@@ -92,3 +92,25 @@ function neverEndingLoop(): never {
 function throwErro2(): never {
   throw Error();
 }
+
+/**
+ * 함수 표현식
+ */
+const arrow_test2 = (x: number, y: number): number => {
+  return x + y;
+};
+arrow_test2(2, 5);
+
+const basic_test2 = function (x: number, y: number): number {
+  return x + y;
+};
+basic_test2(2, 5);
+
+/**
+ * 함수 선언식
+ */
+function test2(x: number, y: number): number {
+  return x + y;
+}
+
+test2(2, 5);
